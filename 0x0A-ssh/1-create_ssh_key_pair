@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# 4096 bit RSA key pair
+
+ssh-keygen -b 4096 -f holberton -N betty
