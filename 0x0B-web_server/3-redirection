@@ -1,7 +1,9 @@
+
 #!/usr/bin/env bash
 # /redirect_me to another page
 
 apt-get -y install nginx
 newline="location /redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
 sed -i "/# Only/ i $newline" /etc/nginx/sites-available/default
-service nginx restart
+sudo service nginx restart
+
