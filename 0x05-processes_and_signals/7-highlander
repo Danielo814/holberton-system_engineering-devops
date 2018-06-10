@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-# displays "I am invincible!!!" when receiving sigterm signal
-trap 'echo "I am invincible!!!"' SIGTERM
-while true; do
-      echo "to infinity and beyond"
-      sleep 2
-done
