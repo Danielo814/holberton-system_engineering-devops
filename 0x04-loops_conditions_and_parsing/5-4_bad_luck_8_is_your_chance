@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# 10 iterations that print Holberton school except for 4th and 8th
+i=0
+while [ $i -lt 10 ];
+do
+	if [ $i -eq 3 ]
+	then
+		echo "bad luck"
+	elif [ $i -eq 7 ]
+	then
+		echo "good luck"
+	else
+		echo "Holberton School"
+	fi
+	let i=i+1
+done
