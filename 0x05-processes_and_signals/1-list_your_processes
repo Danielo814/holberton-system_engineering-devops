@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# list of currently running proesses
-
-ps -auxf
