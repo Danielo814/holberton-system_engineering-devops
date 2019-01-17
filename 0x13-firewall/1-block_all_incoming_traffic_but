@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# blocks all incoming traffic, except ports 22, 80, 443
+sudo ufw disable
+sudo ufw default deny incoming
+sudo ufw allow ssh
+sudo ufw allow https
+sudo ufw allow www
+sudo ufw enable
