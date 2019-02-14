@@ -2,13 +2,13 @@
 """
 0-subs module
 """
-import requests
 
 
 def number_of_subscribers(subreddit):
     """
     number of subscribers
     """
+    import requests
     if subreddit is None or type(subreddit) is not str:
         return 0
     response = requests.get('https://www.reddit.com/r/{}/about.json'.
