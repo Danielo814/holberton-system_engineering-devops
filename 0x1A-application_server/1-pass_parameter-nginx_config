@@ -53,7 +53,7 @@ rewrite ^/.*$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;
 
 	location /airbnb-dynamic/ {
                  include proxy_params;
-                 proxy_pass http://0.0.0.0:8001/number_odd_or_even/;
+                 proxy_pass http://0.0.0.0:8001/;
         }
 
 
